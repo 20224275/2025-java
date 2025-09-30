@@ -1,0 +1,22 @@
+package sec01.exam01;
+
+public class Student {
+	int studentNumber;
+	String name;
+	double medScore;
+	double finalScore;
+	double projectScore;
+	
+	public void SayHello() {
+		System.out.println ("Hello");
+	}
+
+	public void SetMidScore()
+	{
+		
+	}
+	public void TotalScore()
+	{
+	
+	}
+}
