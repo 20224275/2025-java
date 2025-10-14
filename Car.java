@@ -1,40 +1,45 @@
-package sec03.exam01;
+package sec04.exam;
 
 public class Car {
-//	String company = "Kia";
-//	String model ="Truck";
-//	int maxSpeed = 150;
-	String company;
-	String model ;
-	int maxSpeed;
+	int gas;
+	static int numberOfCars;
 	
-	public Car() {
-		this("Kia","truck",150);
-	}
+	int mingas; //한바퀴 돌때 필요한 gas
+	String teamName;
+	String color;
 	
-	public Car(String company) {
-		//this.company = company;
-		this("Kia","truck",150);
-	}
-	public Car(String company, String model) {
-//		this.company = company;
-//		this.model = model;
-		this("Kia","truck",150);
+	
+	Car(int gas, String teamName, String color){
+		this.gas = gas;
+		this.mingas = mingas;
+		this.teamName = teamName;
+		this.color = color;
+		numberOfCars++;
 		
 	}
-	public Car(String company, String model,
-			int maxSpeed) 
+	boolean IsLesftGas() {
+		if(gas < mingas) {
+			System.out.println("연료를 보충해야합니다.")
+			return false;
+		}
+		System.out.println("한바퀴 더 돌 수 있어요.")
+		return true;
+	}
+	
+	void AddGas(int gas) {
+		System.out.println("연료 만땅.")
+		this.gas = gas;
+	}
+	void RunOneRound()
 	{
-		this.company = company;
-		this.model = model;
-		this.maxSpeed = maxSpeed;
-	}
-	public void ShowInfo() {
-		System.out.println("company:"+ company);
-		System.out.println("Model:"+ model);
-		System.out.println("maxSpeed:"+maxSpeed);
+		System.out.println("한바퀴 완주.")
+		this.gas -= migas;
 	}
 	
-	
+	static void showNumberOfCars()
+	{
+		System.out.println("Number of Cars :" +numberOfCars);
+		
+	}
 
 }
