@@ -1,34 +1,21 @@
-package sec04.exam;
+package sec01.exam01;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int gasYank = 100;
-		int minGas = 20;
-		int numOfRounds =20;
+		Car car;
+		Truck truck = new Truck(80,200);
 		
-		Car hyundai = new Car(gasTank, mingas,"Hyundai","Yellow");
+
+		truck.ShowSpeed();
+		car = truck;
+		car.ShowSpeed();
 		
-		int numOfRound = 0;
-		while(numOfRound <numOfRounds)
-		{
-			numOfRound++;
-			
-			if(hyundai.IsLeftGas()) {
-				hyundai.RunOneRound();
-			}
-			else {
-				hyundai.AddGas(gasYank);
-			}
-		}
-		
-		hyundai.showNumberOfCars();
-		Car c1 = new Car(1,1,"",""");
-		Car c2 = new Car(1,1,"",""");
-		Car c3 = new Car(1,1,""","");
-		Car c4 = new Car(1,1,"",""");
-		
-		hyundai.showNumberOfCars();
+		System.out.println("car speed is"
+				+ car.speed);
+		System.out.println("truck speed is"
+				+ truck.speed);
+
 	}
 
 }
