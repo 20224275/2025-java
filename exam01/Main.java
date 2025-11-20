@@ -3,17 +3,19 @@ package exam01;
 public class Main {
 
 	public static void main(String[] args) {
+		Objet obj1 = new Object();
+		Objet obj2 = new Object();
+		obj2 = obj1;
 		
+		if(obj1 == obj2)
+			System.out.println("Equal!!");
+		else
+			System.out.println("Not equal!!");
 		
-		Acc acc;
-		Sav sav = new Sav(5000);
-		acc = sav;
-		
-		sav.ShowBal();
-		acc.ShowBal();
-		
-		System.out.println("Sav : " + sav.bal);
-		System.out.println("Acc : " + acc.bal);
+		if(obj1.equals( obj2))
+			System.out.println("Equal!!");
+		else
+			System.out.println("Not equal!!");
 
 	}
 
