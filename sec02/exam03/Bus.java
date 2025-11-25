@@ -1,4 +1,4 @@
-package sec02.exam04;
+package sec02.exam03;
 
 public class Bus implements Vehicle {
 	@Override

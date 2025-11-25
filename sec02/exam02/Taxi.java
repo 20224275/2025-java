@@ -1,4 +1,4 @@
-package sec02.exam04;
+package sec02.exam02;
 
 public class Taxi implements Vehicle {
 	@Override
